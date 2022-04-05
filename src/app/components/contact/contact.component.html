@@ -1,6 +1,27 @@
 <h1 class="title">Contact Me</h1>
 <div class="container">
-  <div class="content">
-
-  </div>
+  <mat-form-field appearance="fill">
+    <mat-label>Enter your Full Name</mat-label>
+    <input matInput placeholder="John Doe" required>
+    <mat-error *ngIf="name.invalid">{{getErrorMessageName()}}</mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Enter your email</mat-label>
+    <input matInput placeholder="placeholder@gmail.com" [formControl]="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Enter your Phone Number</mat-label>
+    <input matInput placeholder="999-999-9999" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Comments</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+  <br>
+  <button class="submit" mat-raised-button color="primary">Submit</button>
 </div>

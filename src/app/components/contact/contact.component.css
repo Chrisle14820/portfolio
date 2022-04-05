@@ -1,12 +1,16 @@
-.content {
-  padding: 2rem;
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  border: 1px solid black;
+.container {
+  max-width: fit-content;
+  padding-top: 1rem;
 }
 
 .title {
   padding-top: 1rem;
   text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+mat-form-field.mat-form-field {
+  font-size: 16px;
+  font-family: 'Roboto Mono', monospace;
+  width: 40rem;
 }
