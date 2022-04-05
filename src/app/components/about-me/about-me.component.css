@@ -1,0 +1,36 @@
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 5%;
+  text-align: center;
+  opacity: 60%;
+  border-right: 0.5px solid lightgray;
+}
+
+.middle {
+  width: 48%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.right {
+  width: 47%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  margin-right: 0px;
+}
+
+img {
+  height: 1000px;
+  border-radius: 3%;
+}

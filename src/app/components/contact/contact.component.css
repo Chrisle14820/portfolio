@@ -1,0 +1,12 @@
+.content {
+  padding: 2rem;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  border: 1px solid black;
+}
+
+.title {
+  padding-top: 1rem;
+  text-align: center;
+}

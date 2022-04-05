@@ -1,0 +1,77 @@
+.example-container {
+  width: auto;
+  height: 1223px;
+
+}
+
+.header {
+  background-color: #e2e8f0;
+}
+
+h1 {
+  position: absolute;
+  left: 40%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* .example-sidenav-content {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+
+} */
+.btn-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  width: AUTO;
+  background-color: #e2e8f0;
+}
+
+.btn {
+  font-size: 40px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.hamburger {
+  font-size: 30px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+
+a:visited {
+  text-decoration: none;
+}
+
+
+a:hover {
+  text-decoration: none;
+}
+
+
+a:active {
+  text-decoration: none;
+}

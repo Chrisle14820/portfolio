@@ -1,0 +1,54 @@
+.container {
+  padding-top: 2rem;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 1rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 50%;
+}
+
+
+.right {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image {
+  height: auto;
+  width: 100%;
+}
+
+.card-name {
+  text-align: center;
+}
+
+.card {
+  box-shadow: 10px 10px 5px lightgray;
+  border-radius: 2%;
+}
+
+.card-two {
+  box-shadow: 10px 10px 5px lightgray;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 1rem;
+  font-family: 'Roboto Mono', monospace;
+}

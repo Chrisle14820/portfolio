@@ -1,0 +1,68 @@
+<mat-toolbar class="header">
+  <button class="hamburger" type="button" mat-button (click)="drawer.toggle()">
+    <fa-icon [icon]="faBars"></fa-icon>
+  </button>
+  <h1>Get Started - Chris' Visual Studio Code</h1>
+</mat-toolbar>
+
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened="true">
+    <div class="btn-center">
+      <a routerLink="/home" routerLinkActive="active">
+        <button class="btn">
+          <fa-icon [icon]="faHouse"></fa-icon>
+        </button>
+      </a>
+    </div>
+    <div class="btn-center">
+      <a routerLink="/about-me" routerLinkActive="active">
+        <button class="btn">
+          <fa-icon [icon]="faCircleUser"></fa-icon>
+        </button>
+      </a>
+    </div>
+    <div class="btn-center">
+      <a routerLink="/contact" routerLinkActive="active">
+        <button class="btn">
+          <fa-icon [icon]="faPhone"></fa-icon>
+        </button>
+      </a>
+    </div>
+    <div class="btn-center">
+      <a routerLink="/projects" routerLinkActive="active">
+        <button class="btn">
+          <fa-icon [icon]="faCode"></fa-icon>
+        </button>
+      </a>
+    </div>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <div>
+      <tabset>
+        <tab>
+          <ng-template tabHeading>
+            <a class="routing_link" [routerLink]="['/home']">christopher-le.ts</a>
+          </ng-template>
+        </tab>
+        <!-- <tab>
+          <ng-template tabHeading>
+            <a class="routing_link" [routerLink]="['/about-me']">About Me</a>
+          </ng-template>
+        </tab>
+        <tab>
+          <ng-template tabHeading>
+            <a class="routing_link" [routerLink]="['/contact']">Contact</a>
+          </ng-template>
+        </tab>
+        <tab>
+          <ng-template tabHeading>
+            <a class="routing_link" [routerLink]="['/projects']">Projects</a>
+          </ng-template>
+        </tab> -->
+      </tabset>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</mat-drawer-container>
