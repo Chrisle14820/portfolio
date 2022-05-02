@@ -26,4 +26,7 @@ export class ContactComponent implements OnInit {
 
     return this.name.hasError('name') ? 'Not a valid name' : '';
   }
+  onSubmit() {
+    return alert('Feature Coming Soon!');
+  }
 }
